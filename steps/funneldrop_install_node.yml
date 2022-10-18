@@ -1,0 +1,42 @@
+id: funneldrop_install_node
+hints:
+- use nvm to install node
+startFlow:
+  do:
+  - actionId: bot_message
+    params:
+      person: head-of-rd
+      messages:
+      - text: "Hola como estas? bien? oh, we're not in Mexico? sorry my bad. let me recalibrate myself"
+        delay: 2000
+      - text: "............."
+        delay: 2000
+      - text: "Sorry for that... Now let's use nvm to install the following node versions: 12.18.3 and 14.15 and 16.13.0 - please type 'done' when you're finished"
+      delay: 3500
+trigger:
+  type: user_message_to_head-of-rd
+  flowNode:
+    if:
+      conditions:
+      - conditionId: text_contains_strings
+        params:
+          text: "${userMessageText}"
+          strings:
+          - - done
+      then:
+        do:
+        - actionId: bot_message
+          params:
+            person: head-of-rd
+            messages:
+            - text: WOW that was quick...
+              delay: 1300
+        - actionId: finish_step
+      else:
+        do:
+        - actionId: bot_message
+          params:
+            person: head-of-rd
+            messages:
+            - text: I didn't get that... if you run into issues - please ask team members for advice!
+              delay: 2500

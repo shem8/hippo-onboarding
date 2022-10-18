@@ -1,0 +1,40 @@
+id: funneldrop_install_nvm
+hints:
+- You can use: https://tecadmin.net/install-nvm-macos-with-homebrew/
+startFlow:
+  do:
+  - actionId: bot_message
+    params:
+      person: head-of-rd
+      messages:
+      - text: "Hey Bruce Lee, I see you're on s streak :) ready for anotyher one?"
+        delay: 2000
+      - text: "Now let's install nvm - please type 'done' when you're finished"
+      delay: 3500
+trigger:
+  type: user_message_to_head-of-rd
+  flowNode:
+    if:
+      conditions:
+      - conditionId: text_contains_strings
+        params:
+          text: "${userMessageText}"
+          strings:
+          - - done
+      then:
+        do:
+        - actionId: bot_message
+          params:
+            person: head-of-rd
+            messages:
+            - text: you're da man, or da woman, or whatever pronoun you want... shit this stuff is difficult for a bot like me...
+              delay: 1300
+        - actionId: finish_step
+      else:
+        do:
+        - actionId: bot_message
+          params:
+            person: head-of-rd
+            messages:
+            - text: I didn't get that... if you run into issues - please ask team members for advice!
+              delay: 2500

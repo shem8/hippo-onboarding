@@ -1,0 +1,40 @@
+id: funneldrop_install_docker
+hints:
+- Go to https://docs.docker.com/docker-for-mac/install/
+startFlow:
+  do:
+  - actionId: bot_message
+    params:
+      person: head-of-rd
+      messages:
+      - text: "Hey 10x develoiper, ain't resting are'ya? ready for anotyher one?"
+        delay: 2000
+      - text: "One of the most basic tools we use is docker - please install it and when you're done simply type 'done' here on the chat"
+      delay: 3500
+trigger:
+  type: user_message_to_head-of-rd
+  flowNode:
+    if:
+      conditions:
+      - conditionId: text_contains_strings
+        params:
+          text: "${userMessageText}"
+          strings:
+          - - done
+      then:
+        do:
+        - actionId: bot_message
+          params:
+            person: head-of-rd
+            messages:
+            - text: Good for you! another one bites the dust :)
+              delay: 1300
+        - actionId: finish_step
+      else:
+        do:
+        - actionId: bot_message
+          params:
+            person: head-of-rd
+            messages:
+            - text: I didn't get that... if you run into issues - please ask team members for advice!
+              delay: 2500

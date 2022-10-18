@@ -1,0 +1,40 @@
+id: funneldrop_install_postgres
+hints:
+- "Follow the instructions: https://myhippo.atlassian.net/wiki/spaces/HD/pages/802390901/Setting+Up+A+System+For+Safari+Development"
+startFlow:
+  do:
+  - actionId: bot_message
+    params:
+      person: head-of-rd
+      messages:
+      - text: "Very nice indeed!"
+        delay: 2000
+      - text: "Do you like databases? how about we install postgres now? please type 'done' when you're finished"
+      delay: 3500
+trigger:
+  type: user_message_to_head-of-rd
+  flowNode:
+    if:
+      conditions:
+      - conditionId: text_contains_strings
+        params:
+          text: "${userMessageText}"
+          strings:
+          - - done
+      then:
+        do:
+        - actionId: bot_message
+          params:
+            person: head-of-rd
+            messages:
+            - text: You're doing great, keep it up!
+              delay: 1300
+        - actionId: finish_step
+      else:
+        do:
+        - actionId: bot_message
+          params:
+            person: head-of-rd
+            messages:
+            - text: I didn't get that... if you run into issues - please ask team members for advice!
+              delay: 2500
