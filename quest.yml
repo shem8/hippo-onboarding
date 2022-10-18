@@ -4,15 +4,15 @@ description: "In order to preper our machine to run Hippo code there are some de
 summary: "We'll install a few dependencies such as: Homebrew, git, docker, nvm, node, yarn, typescript, and postgres"
 level: beginner
 steps:
-- funneldrop_install_homebrew
-- funneldrop_install_git
-- funneldrop_install_docker
-- funneldrop_install_nvm
-- funneldrop_install_node
-- funneldrop_install_yarn
-- funneldrop_install_typescript
-- funneldrop_install_postgres
-- funneldrop_install_twingate
+- install_homebrew
+- install_git
+- install_docker
+- install_nvm
+- install_node
+- install_yarn
+- install_typescript
+- install_postgres
+- install_twingate
 duration: 1.5
 skills:
 - general
