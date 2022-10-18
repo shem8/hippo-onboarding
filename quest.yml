@@ -16,6 +16,6 @@ steps:
 duration: 1.5
 skills:
 - general
-- communication
+- setup
 questDependency: docker_localsetup
 slogan: I got the need, the need for speed!
