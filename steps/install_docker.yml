@@ -20,7 +20,7 @@ trigger:
         params:
           text: "${userMessageText}"
           strings:
-          - - Docker version
+          - - "Docker version"
       then:
         do:
         - actionId: bot_message

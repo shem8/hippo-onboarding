@@ -20,7 +20,7 @@ trigger:
         params:
           text: "${userMessageText}"
           strings:
-          - - postgres is the PostgreSQL server.
+          - - "postgres is the PostgreSQL server.""
       then:
         do:
         - actionId: bot_message

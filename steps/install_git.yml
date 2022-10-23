@@ -20,7 +20,7 @@ trigger:
         params:
           text: "${userMessageText}"
           strings:
-          - - git version
+          - - "git version"
       then:
         do:
         - actionId: bot_message
