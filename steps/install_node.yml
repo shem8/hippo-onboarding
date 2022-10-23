@@ -11,7 +11,7 @@ startFlow:
         delay: 2000
       - text: "............."
         delay: 2000
-      - text: "Sorry for that... Now let's use nvm to install the following node versions: 12.18.3 and 14.15 and 16.13.0 - please type 'done' when you're finished"
+      - text: "Sorry for that... Now let's use nvm to install the following node versions: 12.18.3 and 14.15 and 16.13.0 - when you're done open a terminal and run 'node' and paste the first line of the output here"
       delay: 3500
 trigger:
   type: user_message_to_head-of-rd
@@ -22,7 +22,7 @@ trigger:
         params:
           text: "${userMessageText}"
           strings:
-          - - done
+          - - Welcome to Node.js v
       then:
         do:
         - actionId: bot_message

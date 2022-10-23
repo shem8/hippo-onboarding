@@ -9,7 +9,7 @@ startFlow:
       messages:
       - text: "Hey ninja how are ya? ready for anotyher one?"
         delay: 2000
-      - text: "Now let's install git - please install it and when you're done simply type 'done' here on the chat"
+      - text: "Now let's install git - please install it and when you're done open a terminal and run 'git --version' and paste the output here"
       delay: 3500
 trigger:
   type: user_message_to_head-of-rd
@@ -20,7 +20,7 @@ trigger:
         params:
           text: "${userMessageText}"
           strings:
-          - - done
+          - - git version
       then:
         do:
         - actionId: bot_message

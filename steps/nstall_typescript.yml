@@ -9,7 +9,7 @@ startFlow:
       messages:
       - text: "Very nice indeed!"
         delay: 2000
-      - text: "Now it's time to install typescript - please type 'done' when you're finished"
+      - text: "Now it's time to install typescript - when you're done open a terminal and run 'tsc -h' and paste the first line of the output here"
       delay: 3500
 trigger:
   type: user_message_to_head-of-rd
@@ -20,7 +20,7 @@ trigger:
         params:
           text: "${userMessageText}"
           strings:
-          - - done
+          - - tsc: The TypeScript Compiler - Version
       then:
         do:
         - actionId: bot_message
