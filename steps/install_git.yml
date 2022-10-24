@@ -19,8 +19,7 @@ trigger:
       - conditionId: text_contains_strings
         params:
           text: "${userMessageText}"
-          strings:
-          - - "git version"
+          strings: ["git version"]
       then:
         do:
         - actionId: bot_message

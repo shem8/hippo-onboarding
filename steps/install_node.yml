@@ -21,8 +21,7 @@ trigger:
       - conditionId: text_contains_strings
         params:
           text: "${userMessageText}"
-          strings:
-          - - "Welcome to Node.js v"
+          strings: ["Welcome to Node.js v"]
       then:
         do:
         - actionId: bot_message
