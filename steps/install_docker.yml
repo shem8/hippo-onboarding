@@ -9,7 +9,7 @@ startFlow:
       messages:
       - text: "Hey 10x develoiper, ain't resting are'ya? ready for anotyher one?"
         delay: 2000
-      - text: "One of the most basic tools we use is docker - please install it and when you're done run 'docker -v' and paste the output here"
+      - text: "One of the most basic tools we use is docker - please install it and when you're done run `docker -v` and paste the output here"
       delay: 3500
 trigger:
   type: user_message

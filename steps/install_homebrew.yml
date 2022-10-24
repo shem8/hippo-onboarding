@@ -11,7 +11,7 @@ startFlow:
         delay: 2000
       - text: "We see that you are new here, but don't worry - we're here to help get you started!"
         delay: 3500
-      - text: "Let's install some stuff, we'll start with homebrew - please install it and when you're done open a terminal and run 'brew -v' and paste the output here"
+      - text: "Let's install some stuff, we'll start with homebrew - please install it and when you're done open a terminal and run `brew -v` and paste the output here"
       delay: 3500
 trigger:
   type: user_message
