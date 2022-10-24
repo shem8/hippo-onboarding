@@ -1,4 +1,4 @@
-id: 1
+id: "hippo-onboarding"
 title: Hippo setup
 description: "In order to preper our machine to run Hippo code there are some dependencies we need to install first"
 summary: "We'll install a few dependencies such as: Homebrew, git, docker, nvm, node, yarn, typescript, and postgres"
