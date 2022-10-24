@@ -1,6 +1,6 @@
 id: install_nvm
 hints:
-- "You can use: https://tecadmin.net/install-nvm-macos-with-homebrew/""
+- "You can use: https://tecadmin.net/install-nvm-macos-with-homebrew/"
 startFlow:
   do:
   - actionId: bot_message
