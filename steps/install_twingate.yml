@@ -5,7 +5,7 @@ startFlow:
   do:
   - actionId: bot_message
     params:
-      person: head-of-rd
+      person: keen
       messages:
       - text: "Very nice indeed!"
         delay: 2000
@@ -25,7 +25,7 @@ trigger:
         do:
         - actionId: bot_message
           params:
-            person: head-of-rd
+            person: keen
             messages:
             - text: "greate job bud! I really feel the urge to deducate the following song to you: https://www.youtube.com/watch?v=xZweLtjNxZY&ab_channel=Andr%C3%A9Rieu"
               delay: 1300
@@ -34,7 +34,7 @@ trigger:
         do:
         - actionId: bot_message
           params:
-            person: head-of-rd
+            person: keen
             messages:
             - text: I didn't get that... if you run into issues - please ask team members for advice!
               delay: 2500

@@ -5,7 +5,7 @@ startFlow:
   do:
   - actionId: bot_message
     params:
-      person: head-of-rd
+      person: keen
       messages:
       - text: "Hola como estas? bien? oh, we're not in Mexico? sorry my bad. let me recalibrate myself"
         delay: 2000
@@ -27,7 +27,7 @@ trigger:
         do:
         - actionId: bot_message
           params:
-            person: head-of-rd
+            person: keen
             messages:
             - text: WOW that was quick...
               delay: 1300
@@ -36,7 +36,7 @@ trigger:
         do:
         - actionId: bot_message
           params:
-            person: head-of-rd
+            person: keen
             messages:
             - text: I didn't get that... if you run into issues - please ask team members for advice!
               delay: 2500

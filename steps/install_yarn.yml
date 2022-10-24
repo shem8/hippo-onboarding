@@ -5,7 +5,7 @@ startFlow:
   do:
   - actionId: bot_message
     params:
-      person: head-of-rd
+      person: keen
       messages:
       - text: "Very nice indeed!"
         delay: 2000
@@ -25,7 +25,7 @@ trigger:
         do:
         - actionId: bot_message
           params:
-            person: head-of-rd
+            person: keen
             messages:
             - text: you're one of a kind, rumor has it that someone @ Hippo tried to do 'yarn install awesome' and we got... you!
               delay: 1300
@@ -34,7 +34,7 @@ trigger:
         do:
         - actionId: bot_message
           params:
-            person: head-of-rd
+            person: keen
             messages:
             - text: I didn't get that... if you run into issues - please ask team members for advice!
               delay: 2500

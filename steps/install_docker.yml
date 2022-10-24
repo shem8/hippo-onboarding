@@ -5,7 +5,7 @@ startFlow:
   do:
   - actionId: bot_message
     params:
-      person: head-of-rd
+      person: keen
       messages:
       - text: "Hey 10x develoiper, ain't resting are'ya? ready for anotyher one?"
         delay: 2000
@@ -25,7 +25,7 @@ trigger:
         do:
         - actionId: bot_message
           params:
-            person: head-of-rd
+            person: keen
             messages:
             - text: Good for you! another one bites the dust :)
               delay: 1300
@@ -34,7 +34,7 @@ trigger:
         do:
         - actionId: bot_message
           params:
-            person: head-of-rd
+            person: keen
             messages:
             - text: I didn't get that... if you run into issues - please ask team members for advice!
               delay: 2500
