@@ -14,7 +14,7 @@ startFlow:
       - text: "Let's install some stuff, we'll start with homebrew - please install it and when you're done open a terminal and run `brew -v` and paste the output here"
       delay: 3500
 trigger:
-  type: user_message
+  type: user_message_to_keen
   flowNode:
     if:
       conditions:

@@ -12,7 +12,7 @@ startFlow:
       - text: "One of the most basic tools we use is docker - please install it and when you're done run `docker -v` and paste the output here"
       delay: 3500
 trigger:
-  type: user_message
+  type: user_message_to_keen
   flowNode:
     if:
       conditions:

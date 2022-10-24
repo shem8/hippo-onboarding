@@ -14,7 +14,7 @@ startFlow:
       - text: "Sorry for that... Now let's use nvm to install the following node versions: 12.18.3 and 14.15 and 16.13.0 - when you're done open a terminal and run `node` and paste the first line of the output here"
       delay: 3500
 trigger:
-  type: user_message
+  type: user_message_to_keen
   flowNode:
     if:
       conditions:

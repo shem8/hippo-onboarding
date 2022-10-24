@@ -12,7 +12,7 @@ startFlow:
       - text: "Do you like databases? how about we install postgres now? when you're done open a terminal and run `postgres --help` and paste the first line of the output here"
       delay: 3500
 trigger:
-  type: user_message
+  type: user_message_to_keen
   flowNode:
     if:
       conditions:

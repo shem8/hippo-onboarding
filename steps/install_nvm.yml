@@ -12,7 +12,7 @@ startFlow:
       - text: "Now let's install nvm - when you're done open a terminal and run `nvm -h` and paste the first line of the output here"
       delay: 3500
 trigger:
-  type: user_message
+  type: user_message_to_keen
   flowNode:
     if:
       conditions:
