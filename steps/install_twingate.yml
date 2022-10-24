@@ -12,7 +12,7 @@ startFlow:
       - text: "Please install twingate, all you need to know is in confluence - please type 'done' when you're finished"
       delay: 3500
 trigger:
-  type: user_message_to_keen
+  type: user_message
   flowNode:
     if:
       conditions:

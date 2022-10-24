@@ -12,7 +12,7 @@ startFlow:
       - text: "Please install yarn - when you're done open a terminal and run `yarn -h` and paste the first line of the output here"
       delay: 3500
 trigger:
-  type: user_message_to_keen
+  type: user_message
   flowNode:
     if:
       conditions:
