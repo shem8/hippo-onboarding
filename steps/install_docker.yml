@@ -1,6 +1,6 @@
 id: install_docker
 hints:
-- Go to https://docs.docker.com/docker-for-mac/install/
+- "Go to https://docs.docker.com/docker-for-mac/install/"
 startFlow:
   do:
   - actionId: bot_message

@@ -1,6 +1,6 @@
 id: install_node
 hints:
-- use nvm to install node
+- "use nvm to install node"
 startFlow:
   do:
   - actionId: bot_message

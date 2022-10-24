@@ -1,6 +1,6 @@
 id: install_homebrew
 hints:
-- Go to: https://brew.sh/ and follow the instructions
+- "Go to: https://brew.sh/ and follow the instructions"
 startFlow:
   do:
   - actionId: bot_message

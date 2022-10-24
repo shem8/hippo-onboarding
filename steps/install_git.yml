@@ -1,6 +1,6 @@
 id: install_git
 hints:
-- Gooogle "git scm download"
+- "Google 'git scm download'"
 startFlow:
   do:
   - actionId: bot_message
