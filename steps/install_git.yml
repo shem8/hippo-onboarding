@@ -1,4 +1,4 @@
-id: funneldrop_install_git
+id: install_git
 hints:
 - Gooogle "git scm download"
 startFlow:

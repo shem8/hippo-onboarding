@@ -1,4 +1,4 @@
-id: funneldrop_install_twingate
+id: install_twingate
 hints:
 - "Follow the instructions here: https://myhippo.atlassian.net/wiki/spaces/HD/pages/2059010354/Twingate+VPN"
 startFlow:
@@ -12,7 +12,7 @@ startFlow:
       - text: "Please install twingate, all you need to know is in confluence - please type 'done' when you're finished"
       delay: 3500
 trigger:
-  type: user_message_to_head-of-rd
+  type: user_message
   flowNode:
     if:
       conditions:

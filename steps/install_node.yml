@@ -1,4 +1,4 @@
-id: funneldrop_install_node
+id: install_node
 hints:
 - use nvm to install node
 startFlow:

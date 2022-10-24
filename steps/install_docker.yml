@@ -1,4 +1,4 @@
-id: funneldrop_install_docker
+id: install_docker
 hints:
 - Go to https://docs.docker.com/docker-for-mac/install/
 startFlow:
@@ -12,7 +12,7 @@ startFlow:
       - text: "One of the most basic tools we use is docker - please install it and when you're done run 'docker -v' and paste the output here"
       delay: 3500
 trigger:
-  type: user_message_to_head-of-rd
+  type: user_message
   flowNode:
     if:
       conditions:

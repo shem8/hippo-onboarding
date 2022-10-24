@@ -1,4 +1,4 @@
-id: funneldrop_install_yarn
+id: install_yarn
 hints:
 - "Run: `npm install --global yarn`"
 startFlow:

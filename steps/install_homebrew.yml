@@ -1,4 +1,4 @@
-id: funneldrop_install_homebrew
+id: install_homebrew
 hints:
 - Go to: https://brew.sh/ and follow the instructions
 startFlow:

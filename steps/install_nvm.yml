@@ -1,4 +1,4 @@
-id: funneldrop_install_nvm
+id: install_nvm
 hints:
 - You can use: https://tecadmin.net/install-nvm-macos-with-homebrew/
 startFlow:

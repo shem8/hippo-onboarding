@@ -1,4 +1,4 @@
-id: funneldrop_install_typescript
+id: install_typescript
 hints:
 - "Run: `sudo npm install -g typescript`"
 startFlow:
