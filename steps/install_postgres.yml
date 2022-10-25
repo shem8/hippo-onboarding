@@ -7,7 +7,11 @@ startFlow:
     params:
       person: keen
       messages:
-      - text: "Very nice indeed!"
+      - text: "Hola como estas? bien? oh, we're not in Mexico? sorry my bad. let me recalibrate myself"
+        delay: 2000
+      - text: "............."
+        delay: 2000
+      - text: "............."
         delay: 2000
       - text: "Do you like databases? how about we install postgres now? when you're done open a terminal and run `postgres --help` and paste the first line of the output here"
       delay: 3500
