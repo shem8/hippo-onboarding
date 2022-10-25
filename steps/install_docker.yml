@@ -19,7 +19,8 @@ trigger:
       - conditionId: text_contains_strings
         params:
           text: "${userMessageText}"
-          strings: ["Docker version"]
+          strings: 
+          - "Docker version"
       then:
         do:
         - actionId: bot_message

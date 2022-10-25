@@ -19,7 +19,8 @@ trigger:
       - conditionId: text_contains_strings
         params:
           text: "${userMessageText}"
-          strings: ["postgres is the PostgreSQL server."]:
+          strings: 
+          - "postgres is the PostgreSQL server."
       then:
         do:
         - actionId: bot_message

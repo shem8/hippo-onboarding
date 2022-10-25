@@ -19,7 +19,8 @@ trigger:
       - conditionId: text_contains_strings
         params:
           text: "${userMessageText}"
-          strings: ["tsc: The TypeScript Compiler - Version"]
+          strings: 
+          - "tsc: The TypeScript Compiler - Version"
       then:
         do:
         - actionId: bot_message

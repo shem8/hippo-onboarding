@@ -19,7 +19,8 @@ trigger:
       - conditionId: text_contains_strings
         params:
           text: "${userMessageText}"
-          strings: ["done"]
+          strings: 
+          - "done"
       then:
         do:
         - actionId: bot_message

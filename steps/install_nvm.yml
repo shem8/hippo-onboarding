@@ -19,7 +19,8 @@ trigger:
       - conditionId: text_contains_strings
         params:
           text: "${userMessageText}"
-          strings: ["Node Version Manager"]
+          strings: 
+          - "Node Version Manager"
       then:
         do:
         - actionId: bot_message
