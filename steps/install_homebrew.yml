@@ -15,6 +15,7 @@ startFlow:
       delay: 3500
 trigger:
   type: user_message
+  person: keen
   flowNode:
     if:
       conditions:
