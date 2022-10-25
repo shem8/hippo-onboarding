@@ -28,7 +28,7 @@ trigger:
           params:
             person: keen
             messages:
-            - text: Good for you! we're off to a good start - let's continue!
+            - text: "Good for you! we're off to a good start - let's continue!"
               delay: 1300
         - actionId: finish_step
       else:
@@ -37,5 +37,5 @@ trigger:
           params:
             person: keen
             messages:
-            - text: I didn't get that... if you run into issues - please ask team members for advice!
+            - text: "I didn't get that... if you run into issues - please ask team members for advice!"
               delay: 2500
