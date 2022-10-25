@@ -7,7 +7,7 @@ startFlow:
     params:
       person: keen
       messages:
-      - text: "Hey 10x develoiper, ain't resting are'ya? ready for anotyher one?"
+      - text: "Hey 10x developer, ain't resting are'ya? ready for anotyher one?"
         delay: 2000
       - text: "One of the most basic tools we use is docker - please install it and when you're done run `docker -v` and paste the output here"
       delay: 3500
