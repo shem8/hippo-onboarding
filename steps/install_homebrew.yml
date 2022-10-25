@@ -18,11 +18,10 @@ trigger:
   flowNode:
     if:
       conditions:
-      - conditionId: text_contains_strings
+      - conditionId: text_match_regex
         params:
           text: "${userMessageText}"
-          strings: 
-          - Homebrew
+          regex: "^Homebrew \d\..*$"
       then:
         do:
         - actionId: bot_message
