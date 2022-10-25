@@ -7,7 +7,7 @@ startFlow:
     params:
       person: keen
       messages:
-      - text: "Very nice indeed!"
+      - text: "You're doing great, keep it up!"
         delay: 2000
       - text: "Please install twingate, all you need to know is in confluence - please type 'done' when you're finished"
       delay: 3500

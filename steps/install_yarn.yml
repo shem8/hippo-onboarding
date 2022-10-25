@@ -29,7 +29,7 @@ trigger:
           params:
             person: keen
             messages:
-            - text: you're one of a kind, rumor has it that someone @ Hippo tried to do 'yarn install awesome' and we got... you!
+            - text: you're one of a kind, rumor has it that someone @ Hippo tried to do `yarn install awesome` and we got... **you**!
               delay: 1300
         - actionId: finish_step
       else:
